@@ -69,6 +69,11 @@ class linked_list:
                 print("Index value out of range") 
                 raise Exception("Index out of range")
 
+    def ins_lst(self,listt):
+        self.head=None
+        for i in listt:
+            self.end(i)
+
 ll=linked_list()
 ll.delet(3)
 ll.begin("Dog")
@@ -79,3 +84,8 @@ ll.end("Bird")
 ll.middle(2,"Goat")
 ll.delet(4)
 ll.print()
+print()
+lstt=["My", "Name", "Is", "Prashant"]
+ll.ins_lst(lstt)
+
+ll.print()  
